@@ -1,0 +1,209 @@
+/*poner color a todos los botones*/
+:root{
+    --pink:#f875c1;
+}
+/* se usa para quitar los puntos de las listas*/
+*{
+    margin:0; padding:0;/*establecer la margen de un elemneto y relleno interno*/
+    box-sizing: border-box;/*calcula el ancho y la altura*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*se alistan varias fuentes en orden*/
+    outline: none; border:none;/*elimina el contorno elinima el borde*/
+    color: rgb(11, 12, 12);/*color del texto*/
+    text-decoration: none;/*decoracion del texto no estara subrayado*/
+    
+    
+}
+/* tamaño de la fuente, desplazamintos evita que el contenido se esconda y organiza la pagina */
+html{
+    font-size: 69.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;/*se queda fijo arriba al hacer desplazamiento*/
+    top: 0; left: 0; right: 0;/*lo pega completamente a la parte superior*/
+    background:#f0d2dc;/*color de fondo */
+    padding:2rem 9%;/*espacio interno*/
+    display: flex;/*alinear los elementos*/
+    align-items: center;/*centrar los elementos*/
+    justify-content: space-between;/*deja espacio entre los elementos*/
+    z-index: 1000;/*asegura que el header quede por encima de todo*/
+}
+/*centra y estandariza el diseño de los encabezados de la pagina web*/
+.p{
+    text-align: center;
+    font-size: 3rem;
+    color:#050505 ;
+    padding:1rem;
+    margin:2rem 0;
+    background: #f1d8d8;
+}
+/* enlace de menu pricipal*/
+header .menu a {
+    color: #080808fd;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+/*cambio de color cuando se pasa el mouse*/
+header .menu a:hover{
+    color:var(--pink);
+}
+/*iconos del encabezado*/
+header .icons a{
+    font-size: 2.5rem;
+    color:#000000;
+    margin-left: 1.5rem;
+}
+/*color de iconos al pasar el mose*/
+header .icons a:hover{
+    color: var(--pink);
+}
+
+/*para poner una imagen de fondo*/
+.tienda{
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    background: url(foto-fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #232024;
+}
+.heading{
+    font-size: 48px;/*tamaño de la letra*/
+    font-weight: bold;/*grosor de la fuente en negrita*/
+    margin-top: 100px;/*margen superior del elemento*/
+    margin-bottom: 30px;/*margen inferior*/
+    color: #060606;/*color de texto*/
+}
+/*boton de comprar flores*/
+.comprar{
+    display: inline-block;
+    margin-top: 50px; /*estos baja el botan*/
+    border-radius: 5rem;
+    background: #f698bf;
+    color: #eceaea;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+/*esteblese color de fondo del boton*/
+.comprar:hover{
+    background:var(--pink)
+}
+
+.informacion{
+    text-align: center;
+    font-size: 4rem;
+    color: #0d0d0d;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #e390b3;
+
+}
+span{
+    color: #f9f5f7;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.about .fila{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .fila .imagen{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .fila .imagen img{
+    width: 100%;
+    border: 0rem solid#dfa0c4;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem #030303
+
+}
+.contenido{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.imagen{
+    margin-right: 2opx;
+}
+img{
+    max-width: 300px;
+    height: auto;
+}
+/*para borde de las tablas*/
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ae6785;
+    color: #fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+}
+body{
+    background-color: #ecd1de;
+}
+/*tbla con imagenes*/
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+td, th{
+    padding: 15px;
+}
+
+
+/*iconos de redes sociales*/
+.redes-sociales{
+    text-align: center;
+    margin-top: 20px;
+}
+.redes-sociales a{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    background-color: #e0c8c8;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.redes-sociales a:hover{
+    background-color: #d877a0;
+}
+.facebook{background-color: #000000;}
+.instagram{background-color: #050505;}
+.Correo Electronico{ background-color: #232024;}
+
+.boton-registro{
+    background-color: #c7497d;
+    color: #0c0c0c;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0, 0,0.1);
+}
+.boton-registro:hover{
+    background-color: #d698b2;
+}
